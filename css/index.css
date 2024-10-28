@@ -1,0 +1,736 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+#timeRecord{
+  display: block;
+  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31.755px; /* 140% */
+}
+.row{
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.ras{
+  position: fixed;
+  margin-left: 5%;
+  margin-right: 5%;
+  bottom: 0px;
+  height: 11%;
+  width: 90%;
+  background: #251403;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body{
+  background: #fff;;
+}
+.flex{
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  width: 100%;
+    height: 15%;
+  background: #251403;
+  color: #fff;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+#message{
+ 
+  max-width:96% ;
+}
+.titel{
+  color: #fff;
+font-family: Inter;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.titel-nema{
+  color: #000000;
+  font-family: Inter;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+button{
+  margin-top: 10px;
+  background-color:aliceblue;
+  border: 3px solid black; 
+  
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31.755px; /* 140% */
+}
+button:hover{
+  background: #5b5035;
+}
+#carta{
+  height: 550px;
+  background: #C2A767;
+  text-align: center;
+}
+h1{
+  color: #1C0C03;
+text-align: center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 140% */
+}
+#myImage{
+  width: 400px;
+  height: 400px;
+}
+#start{
+  display: block;
+}
+#Yes{
+  display: none;
+}
+#No{
+  display: none;
+}
+#restart{
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .flex{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 10%;
+    
+    background: #251403;
+    color: #fff;
+  }
+  .center{
+    padding-top: 20px;
+  }
+  button{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background-color:aliceblue;
+    border: 3px solid black; 
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.755px; /* 140% */
+  }
+  #carta{
+    height: 90%;
+    width: 100%;
+    background: #C2A767;
+    text-align: center;
+  }
+  h1{
+    color: #1C0C03;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 140% */
+  }
+}
+@media (max-width: 1200px) and (min-width: 1010px) {
+  .flex{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 10%;
+    
+    background: #251403;
+    color: #fff;
+  }
+  button{
+    margin-top: 10px;
+    width: 100%;
+    height: 45px;
+    background-color:aliceblue;
+    border: 3px solid black; 
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.755px; /* 140% */
+  }
+  #carta{
+    height: 73%;
+    width: 100%;
+    background: #C2A767;
+    text-align: center;
+  }
+  h1{
+    color: #1C0C03;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 140% */
+  }
+
+}
+@media (min-width: 819px) and (max-width: 1010px) {
+
+  button{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background-color:aliceblue;
+    border: 3px solid black; 
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.755px; /* 140% */
+  }
+  .ras{
+    height: 6%;
+  }
+}
+@media (min-width: 690px) and (max-width: 819px) {
+
+  button{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background-color:aliceblue;
+    border: 3px solid black; 
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.755px; /* 140% */
+  }
+  #carta{
+    height: 85%;
+    width: 100%;
+    background: #C2A767;
+    text-align: center;
+  }
+  #myImage{
+    width: 360px;
+    height: 360px;
+  }
+  .ras{
+    height: 6%;
+  }
+}
+@media (min-width: 490px) and (max-width: 690px) {
+  button{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background-color:aliceblue;
+    border: 3px solid black; 
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.755px; /* 140% */
+  }
+  #carta{
+    height: 89%;
+    width: 100%;
+    background: #C2A767;
+    text-align: center;
+  }
+  #myImage{
+    width: 350px;
+    height: 350px;
+  }
+  .ras{
+    height: 6%;
+  }
+}
+@media (min-width: 380px) and (max-width: 490px) {
+  button{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background-color:aliceblue;
+    border: 3px solid black; 
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.755px; /* 140% */
+  }
+  #myImage{
+    width: 340px;
+    height: 340px;
+  }
+  #carta{
+    height: 85%;
+    width: 100%;
+    background: #C2A767;
+    text-align: center;
+  }
+  h1{
+    color: #1C0C03;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 140% */
+  }
+  button:hover{
+    background: none;
+  }
+  .ras{
+    height: 6%;
+  }
+}
+@media (min-width: 333px) and (max-width: 380px) {
+  button{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background-color:aliceblue;
+    border: 3px solid black; 
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 140% */
+  }
+  #myImage{
+    width: 300px;
+    height: 300px;
+  }
+  #carta{
+    height: 85%;
+    width: 100%;
+    background: #C2A767;
+    text-align: center;
+  }
+  h1{
+    color: #1C0C03;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px; /* 140% */
+  }
+  button:hover{
+    background: none;
+  }
+  .ras{
+    height: 6%;
+  }
+}
+@media (min-height: 645px) and (max-height: 720px) {
+  #myImage{
+    width: 350px;
+    height: 350px;
+  }
+  #carta{
+    height: 90%;
+    width: 100%;
+    background: #C2A767;
+    text-align: center;
+  }
+  .ras{
+    height: 5.5%;
+  }
+}
+@media (min-height: 600px) and (max-height: 645px) {
+  #myImage{
+    width: 340px;
+    height: 340px;
+  }
+  #carta{
+    height: 90%;
+    width: 100%;
+    background: #C2A767;
+    text-align: center;
+  }
+  .ras{
+    height: 4%;
+  }
+}
+@media (min-height: 550px) and (max-height: 600px) {
+  #myImage{
+    width: 340px;
+    height: 340px;
+  }
+  #carta{
+    height: 80%;
+    width: 100%;
+    background: #C2A767;
+    text-align: center;
+  }
+  .ras{
+    height: 3%;
+  }
+  .button{
+    display: flex;
+  }
+  button{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50%;
+    height: 35px;
+    background-color:aliceblue;
+    border: 3px solid black; 
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.755px; /* 140% */
+  }
+  #start{
+    width: 100%;
+  }
+  #restart{
+    width: 100%;
+  }
+}
+@media (min-height: 538px) and (max-height: 550px) {
+  #myImage{
+    width: 330px;
+    height: 330px;
+  }
+  #carta{
+    height: 80%;
+    width: 100%;
+    background: #C2A767;
+    text-align: center;
+  }
+  .ras{
+    height: 2%;
+  }
+  .button{
+    display: flex;
+  }
+  button{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50%;
+    height: 35px;
+    background-color:aliceblue;
+    border: 3px solid black; 
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.755px; /* 140% */
+  }
+  #start{
+    width: 100%;
+  }
+  #restart{
+    width: 100%;
+  }
+}
+@media (min-height: 480px) and (max-height: 538px) {
+  #myImage{
+    width: 280px;
+    height: 280px;
+  }
+  #carta{
+    height: 75%;
+    width: 100%;
+    background: #C2A767;
+    text-align: center;
+  }
+  .ras{
+    display: none;
+  }
+  .button{
+    display: flex;
+    justify-content: space-between;
+  }
+  button{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50%;
+    height: 30px;
+    background-color:aliceblue;
+    border: 3px solid black; 
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.755px; /* 140% */
+  }
+  #start{
+    width: 100%;
+  }
+  #restart{
+    width: 100%;
+  }
+}
+@media (min-height: 420px) and (max-height: 480px) {
+  #myImage{
+    width: 240px;
+    height: 240px;
+  }
+  #carta{
+    height: 70%;
+    width: 100%;
+    background: #C2A767;
+    text-align: center;
+  }
+  .ras{
+    display: none;
+  }
+  .button{
+    display: flex;
+  }
+  button{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50%;
+    height: 30px;
+    background-color:aliceblue;
+    border: 3px solid black; 
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.755px; /* 140% */
+  }
+  #start{
+    width: 100%;
+  }
+  #restart{
+    width: 100%;
+  }
+}
+@media (min-height: 375px) and (max-height: 421px) {
+  #myImage{
+    width: 200px;
+    height: 200px;
+  }
+  #carta{
+    height: 68%;
+    width: 100%;
+    background: #C2A767;
+    text-align: center;
+  }
+  .ras{
+    display: none;
+  }
+  .button{
+    display: flex;
+  }
+  button{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50%;
+    height: 30px;
+    background-color:aliceblue;
+    border: 3px solid black; 
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.755px; /* 140% */
+  }
+  #start{
+    width: 100%;
+  }
+  #restart{
+    width: 100%;
+  }
+}
+@media (min-height: 330px) and (max-height: 375px) {
+  #myImage{
+    width: 150px;
+    height: 150px;
+  }
+  #carta{
+    height: 63%;
+    width: 100%;
+    background: #C2A767;
+    text-align: center;
+  }
+  .ras{
+    display: none;
+  }
+  .button{
+    display: flex;
+  }
+  button{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50%;
+    height: 30px;
+    background-color:aliceblue;
+    border: 3px solid black; 
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.755px; /* 140% */
+  }
+  #start{
+    width: 100%;
+  }
+  #restart{
+    width: 100%;
+  }
+}
+@media (min-height: 290px) and (max-height: 330px) {
+  h1{
+    color: #1C0C03;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 140% */
+  }
+  #myImage{
+    width: 110px;
+    height: 110px;
+  }
+  #carta{
+    height: 63%;
+    width: 100%;
+    background: #C2A767;
+    text-align: center;
+  }
+  .ras{
+    display: none;
+  }
+  .button{
+    display: flex;
+  }
+  .titel{
+    color: #fff;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  button{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50%;
+    height: 28px;
+    background-color:aliceblue;
+    border: 3px solid black; 
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.755px; /* 140% */
+  }
+  #start{
+    width: 100%;
+  }
+  #restart{
+    width: 100%;
+  }
+}
+@media (min-height: 1px) and (max-height: 290px) {
+  h1{
+    color: #1C0C03;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 140% */
+  }
+  #myImage{
+    width: 100px;
+    height: 100px;
+  }
+  #carta{
+    height: 63%;
+    width: 100%;
+    background: #C2A767;
+    text-align: center;
+  }
+  .ras{
+    display: none;
+  }
+  .button{
+    display: flex;
+  }
+  .titel{
+    color: #fff;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  button{
+  margin-bottom: 0.1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50%;
+    height: 25px;
+    background-color:aliceblue;
+    border: 3px solid black; 
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.755px; /* 140% */
+  }
+  #time{
+    font-size: 9px;
+  }
+  #name{
+    font-size: 11px;
+  }
+  #start{
+    width: 100%;
+  }
+  #restart{
+    width: 100%;
+  }
+}

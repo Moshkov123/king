@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Yandex Games SDK -->
+<script src="https://yandex.ru/games/sdk/v2"></script>
+<script>
+   YaGames
+    .init()
+    .then(ysdk => {
+        console.log('Yandex SDK initialized');
+        window.ysdk = ysdk;
+    });
+    function reklam(){
+        ysdk.adv.showFullscreenAdv({
+        callbacks: {
+            onClose: function(wasShown) {
+            },
+            onError: function(error) {
+            }
+        }})
+    }
+</script>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="flex">
+                <div>
+                    <div class="titel">Армия</div>
+                    <div id="army">50</div>
+                </div>
+                <div>
+                    <div class="titel">Народ</div>
+                    <div id="people">50</div>
+                </div>
+                <div>
+                    <div class="titel">Дипломатия</div>
+                    <div id="diplomacy">50</div>
+                </div>
+                <div>
+                    <div class="titel">Деньги</div>
+                    <div id="gold">50</div>
+                </div>
+            </div>
+            <div id="carta">
+                <div class="center"><h1 id="message">Милорд, наконец то вы вернулись!</h1></div>
+                <div id="timeRecord"></div>
+                <img id="myImage"  src="img/Start.png">
+                <div id="name" class="titel-nema">Начать</div>
+                <div id="time"></div>
+            </div>
+            <div class="button">
+                <button id="start" class="start" onclick="start(); reklam();">
+                    Начать
+                </button>
+                <button id="Yes" onclick=Yes();>
+                    Да
+                </button>
+                <button id="No" onclick=No();>
+                    Нет
+                </button>
+                <button id="restart" onclick="restart(); reklam();">
+                    Начать заново
+                </button>
+            </div>
+        </div> 
+        <div class="ras"></div>
+    </div>
+    
+    <script src="js/index.js">
+    </script>
+</body>
+</html>
